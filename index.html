@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apoorv Singh - Professional Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#000000', 
+                        'secondary': '#555555', 
+                        'background': '#ffffff', 
+                        'text-primary': '#1a1a1a', 
+                        'text-secondary': '#666666', 
+                        'card-bg': '#ffffff',
+                        'section-bg': '#f9fafb',
+                        'border-color': '#e5e7eb',
+                        'primary-dark': '#ffffff',
+                        'secondary-dark': '#cccccc',
+                        'background-dark': '#000000',
+                        'text-primary-dark': '#f5f5f5',
+                        'text-secondary-dark': '#a1a1a1',
+                        'card-bg-dark': '#111111',
+                        'section-bg-dark': '#111111',
+                        'border-color-dark': '#2b2b2b',
+                        'deep-green': '#006400'
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-background dark:bg-background-dark text-text-primary dark:text-text-primary-dark transition-colors duration-300">
+    <!-- Header -->
+    <header id="main-header" class="bg-background/80 dark:bg-background-dark/80 backdrop-blur-sm fixed w-full top-0 left-0 z-50">
+        <div class="container mx-auto px-6 py-5 flex justify-between items-center">
+            <!-- Left Side Group: Logo + Nav -->
+            <div class="flex items-center space-x-8">
+                <div id="logo" class="text-base font-bold text-primary dark:text-text-primary-dark">
+                    Apoorv Singh
+                </div>
+                <nav id="navbar" class="hidden md:flex items-center">
+                    <ul class="flex space-x-8">
+                        <li><a href="#hero" class="text-sm text-text-primary dark:text-text-primary-dark font-medium hover:text-primary dark:hover:text-primary-dark transition duration-300">Home</a></li>
+                        <li><a href="#about" class="text-sm text-text-primary dark:text-text-primary-dark font-medium hover:text-primary dark:hover:text-primary-dark transition duration-300">About</a></li>
+                        <li><a href="#experience" class="text-sm text-text-primary dark:text-text-primary-dark font-medium hover:text-primary dark:hover:text-primary-dark transition duration-300">Experience</a></li>
+                        <li><a href="#projects" class="text-sm text-text-primary dark:text-text-primary-dark font-medium hover:text-primary dark:hover:text-primary-dark transition duration-300">Projects</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Right Side Group: Social Icons + Toggles -->
+            <div class="flex items-center space-x-4">
+                <div class="hidden md:flex items-center space-x-5 text-text-secondary dark:text-text-secondary-dark">
+                    <a href="mailto:er.apoorvsingh@gmail.com" class="hover:text-primary dark:hover:text-primary-dark transition duration-300 group relative">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
+                        <span class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">Email</span>
+                    </a>
+                    <a href="https://github.com/apoorvvvv" target="_blank" class="hover:text-primary dark:hover:text-primary-dark transition duration-300 group relative">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        <span class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/apoorv-singh-15490a216/" target="_blank" class="hover:text-primary dark:hover:text-primary-dark transition duration-300 group relative">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        <span class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">LinkedIn</span>
+                    </a>
+                    <a href="https://medium.com/@er.apoorvsingh" target="_blank" class="hover:text-primary dark:hover:text-primary-dark transition duration-300 group relative">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"></path><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd"></path></svg>
+                        <span class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">Medium</span>
+                    </a>
+                </div>
+                <a href="my-resume.pdf" target="_blank" class="hidden md:flex items-center text-text-secondary dark:text-text-secondary-dark hover:text-primary dark:hover:text-primary-dark transition duration-300 group relative">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">Resume</span>
+                </a>
+                <button id="theme-toggle" type="button" class="text-text-secondary dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none rounded-lg text-sm p-2.5">
+                    <svg id="theme-toggle-dark-icon" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                    <svg id="theme-toggle-light-icon" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 5.05A1 1 0 003.636 6.464l.707.707a1 1 0 001.414-1.414l-.707-.707zM3 11a1 1 0 100-2H2a1 1 0 100 2h1zM6.464 14.364l.707.707a1 1 0 01-1.414 1.414l-.707-.707a1 1 0 011.414-1.414z"></path></svg>
+                </button>
+                <button id="mobile-menu-button" class="md:hidden text-primary dark:text-text-primary-dark focus:outline-none"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 bg-white dark:bg-card-bg-dark border-t border-border-color dark:border-border-color-dark">
+             <a href="#hero" class="block py-2 text-text-primary dark:text-text-primary-dark hover:text-primary dark:hover:text-primary-dark transition duration-300">Home</a>
+             <a href="#about" class="block py-2 text-text-primary dark:text-text-primary-dark hover:text-primary dark:hover:text-primary-dark transition duration-300">About</a>
+             <a href="#experience" class="block py-2 text-text-primary dark:text-text-primary-dark hover:text-primary dark:hover:text-primary-dark transition duration-300">Experience</a>
+             <a href="#projects" class="block py-2 text-text-primary dark:text-text-primary-dark hover:text-primary dark:hover:text-primary-dark transition duration-300">Projects</a>
+             <div class="flex items-center space-x-5 pt-4 mt-4 border-t border-border-color dark:border-border-color-dark text-text-secondary dark:text-text-secondary-dark">
+                 <a href="mailto:er.apoorvsingh@gmail.com" class="hover:text-primary dark:hover:text-primary-dark transition duration-300"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg></a>
+                 <a href="https://github.com/apoorvvvv" target="_blank" class="hover:text-primary dark:hover:text-primary-dark transition duration-300"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                 <a href="https://www.linkedin.com/in/apoorv-singh-15490a216/" target="_blank" class="hover:text-primary dark:hover:text-primary-dark transition duration-300"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                 <a href="https://medium.com/@er.apoorvsingh" target="_blank" class="hover:text-primary dark:hover:text-primary-dark transition duration-300"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"></path><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd"></path></svg></a>
+             </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section id="hero" class="bg-background dark:bg-background-dark text-text-primary dark:text-text-primary-dark h-[calc(100vh-5rem)] flex flex-col items-center justify-center text-center">
+            <div class="flex-grow w-full"><canvas id="galaxy-canvas"></canvas></div>
+            <div class="relative z-10 px-6 pb-12">
+                <h1 id="typing-animation" class="text-4xl md:text-6xl font-bold mb-4 text-primary dark:text-primary-dark min-h-[4rem] md:min-h-[5rem]"></h1>
+                <p class="text-lg md:text-2xl mb-2 text-text-secondary dark:text-text-secondary-dark">Bringing ideas to life through code.</p>
+                <p class="text-base md:text-lg mb-8 text-text-secondary dark:text-text-secondary-dark max-w-2xl mx-auto">As a Computer Science student in New York, I'm eagerly exploring the frontiers of technology, from the complexities of AI to the world of quantum computing.</p>
+                <a href="mailto:er.apoorvsingh@gmail.com" class="inline-flex items-center justify-center bg-primary dark:bg-primary-dark text-white dark:text-background-dark py-3 px-8 rounded-md font-semibold hover:bg-gray-800 dark:hover:bg-secondary-dark transition duration-300 text-lg">
+                    <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                    Say Hello
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-24 bg-section-bg dark:bg-section-bg-dark">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="flex items-center mb-12">
+                     <h2 class="text-3xl md:text-4xl font-bold text-primary dark:text-primary-dark whitespace-nowrap">/ about me</h2>
+                     <div class="w-full h-px bg-border-color dark:bg-border-color-dark ml-4"></div>
+                </div>
+                <div class="grid md:grid-cols-3 gap-12 items-start">
+                    <div class="md:col-span-2">
+                        <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed mb-6 increased-word-spacing">Hello! I'm Apoorv, a Computer Science student in New York driven by a fascination with turning complex problems into elegant software. My journey into technology stems from a relentless curiosity about what lies on the horizon, currently leading me to explore the transformative fields of Artificial Intelligence and Quantum Computing.</p>
+                        <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed mb-6 increased-word-spacing">Here are a few technologies I've been working with recently:</p>
+                        <ul class="grid grid-cols-2 gap-x-6 gap-y-2 text-text-secondary dark:text-text-secondary-dark increased-word-spacing">
+                            <li class="flex items-center"><svg class="w-3 h-3 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path d="M6.3 2.8a.75.75 0 01.75.75v13.5a.75.75 0 01-1.5 0V3.55a.75.75 0 01.75-.75zM15.8 9.25a.75.75 0 01.75.75v.001a.75.75 0 01-.75.75H4.2a.75.75 0 01-.75-.75V10a.75.75 0 01.75-.75h11.6z"></path></svg>Python</li>
+                            <li class="flex items-center"><svg class="w-3 h-3 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path d="M6.3 2.8a.75.75 0 01.75.75v13.5a.75.75 0 01-1.5 0V3.55a.75.75 0 01.75-.75zM15.8 9.25a.75.75 0 01.75.75v.001a.75.75 0 01-.75.75H4.2a.75.75 0 01-.75-.75V10a.75.75 0 01.75-.75h11.6z"></path></svg>C++</li>
+                            <li class="flex items-center"><svg class="w-3 h-3 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path d="M6.3 2.8a.75.75 0 01.75.75v13.5a.75.75 0 01-1.5 0V3.55a.75.75 0 01.75-.75zM15.8 9.25a.75.75 0 01.75.75v.001a.75.75 0 01-.75.75H4.2a.75.75 0 01-.75-.75V10a.75.75 0 01.75-.75h11.6z"></path></svg>Qiskit</li>
+                            <li class="flex items-center"><svg class="w-3 h-3 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path d="M6.3 2.8a.75.75 0 01.75.75v13.5a.75.75 0 01-1.5 0V3.55a.75.75 0 01.75-.75zM15.8 9.25a.75.75 0 01.75.75v.001a.75.75 0 01-.75.75H4.2a.75.75 0 01-.75-.75V10a.75.75 0 01.75-.75h11.6z"></path></svg>C#</li>
+                            <li class="flex items-center"><svg class="w-3 h-3 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path d="M6.3 2.8a.75.75 0 01.75.75v13.5a.75.75 0 01-1.5 0V3.55a.75.75 0 01.75-.75zM15.8 9.25a.75.75 0 01.75.75v.001a.75.75 0 01-.75.75H4.2a.75.75 0 01-.75-.75V10a.75.75 0 01.75-.75h11.6z"></path></svg>Java</li>
+                            <li class="flex items-center"><svg class="w-3 h-3 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path d="M6.3 2.8a.75.75 0 01.75.75v13.5a.75.75 0 01-1.5 0V3.55a.75.75 0 01.75-.75zM15.8 9.25a.75.75 0 01.75.75v.001a.75.75 0 01-.75.75H4.2a.75.75 0 01-.75-.75V10a.75.75 0 01.75-.75h11.6z"></path></svg>HTML/CSS/JS</li>
+                        </ul>
+                        <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed mt-6 increased-word-spacing">Outside of the working world, I'm an avid gamer who enjoys immersive digital experiences, and I love to travel, exploring new places and cultures whenever I get the chance.</p>
+                    </div>
+                    <div class="relative md:col-span-1">
+                        <div class="w-64 h-64 rounded-lg overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-300">
+                            <img src="/Users/apoorvsingh/Desktop/my website/pic.jpg" alt="Apoorv Singh" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-primary dark:bg-primary-dark rounded-lg -z-10"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-24 bg-background dark:bg-background-dark">
+             <div class="container mx-auto px-6 max-w-4xl">
+                 <div class="flex items-center mb-12">
+                     <h2 class="text-3xl md:text-4xl font-bold text-primary dark:text-primary-dark whitespace-nowrap">/ experience</h2>
+                     <div class="w-full h-px bg-border-color dark:bg-border-color-dark ml-4"></div>
+                </div>
+                <div id="experience-container" class="relative">
+                    <div id="experience-deck">
+                        <!-- Experience Card 1 -->
+                        <div class="experience-card p-6 bg-card-bg dark:bg-card-bg-dark rounded-lg shadow-xl border border-border-color dark:border-border-color-dark">
+                             <h3 class="font-bold text-lg text-primary dark:text-primary-dark mb-1">API Development Intern</h3>
+                             <p class="text-sm font-medium text-secondary dark:text-secondary-dark mb-2">Pair Bytes | Jun–Aug 2023</p>
+                             <p class="text-sm leading-snug tracking-wide text-text-secondary dark:text-text-secondary-dark">Developed RESTful API endpoints using Python and Flask. Managed GET and POST workflows for efficient data access and database interaction, improving backend functionality. Tools: Flask, Postman, VS Code.</p>
+                        </div>
+                        <!-- Experience Card 2 -->
+                        <div class="experience-card p-6 bg-card-bg dark:bg-card-bg-dark rounded-lg shadow-xl border border-border-color dark:border-border-color-dark">
+                             <h3 class="font-bold text-lg text-primary dark:text-primary-dark mb-1">Research Assistant — Quantum Computing & AI</h3>
+                             <p class="text-sm font-medium text-secondary dark:text-secondary-dark mb-2">Adelphi University | Summer–Fall (Current)</p>
+                             <p class="text-sm leading-snug tracking-wide text-text-secondary dark:text-text-secondary-dark">Working with Prof. Dr. Ebrahimi on research at the intersection of quantum computing and artificial intelligence, focusing on quantum algorithms and AI integration.</p>
+                        </div>
+                    </div>
+                     <!-- Arrow Controls -->
+                     <button id="prev-exp" class="absolute top-1/2 left-0 md:-left-16 transform -translate-y-1/2 p-2 rounded-full bg-gray-200 dark:bg-card-bg-dark hover:bg-gray-300 dark:hover:bg-border-color-dark disabled:opacity-50 disabled:cursor-not-allowed z-30">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    </button>
+                    <button id="next-exp" class="absolute top-1/2 right-0 md:-right-16 transform -translate-y-1/2 p-2 rounded-full bg-gray-200 dark:bg-card-bg-dark hover:bg-gray-300 dark:hover:bg-border-color-dark disabled:opacity-50 disabled:cursor-not-allowed z-30">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+                </div>
+             </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="projects" class="py-24 bg-section-bg dark:bg-section-bg-dark">
+            <div class="container mx-auto px-6 max-w-4xl">
+                 <div class="flex items-center mb-12">
+                     <h2 class="text-3xl md:text-4xl font-bold text-primary dark:text-primary-dark whitespace-nowrap">/ projects</h2>
+                     <div class="w-full h-px bg-border-color dark:bg-border-color-dark ml-4"></div>
+                </div>
+                <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="project-card bg-card-bg dark:bg-card-bg-dark rounded-lg border border-border-color dark:border-border-color-dark overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 hover:shadow-xl dark:hover:shadow-2xl dark:hover:shadow-white/10 flex flex-col"><img src="pic1.png" alt="Voice Assistant Bot" class="w-full h-56 object-cover"><div class="p-6 flex flex-col flex-grow"><h3 class="text-xl font-bold mb-2 text-primary dark:text-text-primary-dark">Voice Assistant Bot</h3><p class="mb-4 text-text-secondary dark:text-text-secondary-dark flex-grow">A Python-based voice assistant that speaks and performs basic Windows tasks like opening apps, web search, and sending emails.</p><div class="flex flex-wrap gap-2 mb-4"><span class="bg-gray-200 dark:bg-border-color-dark text-xs font-semibold px-2.5 py-1 rounded-full">Python</span><span class="bg-gray-200 dark:bg-border-color-dark text-xs font-semibold px-2.5 py-1 rounded-full">SpeechRecognition</span><span class="bg-gray-200 dark:bg-border-color-dark text-xs font-semibold px-2.5 py-1 rounded-full">pyttsx3</span><span class="bg-gray-200 dark:bg-border-color-dark text-xs font-semibold px-2.5 py-1 rounded-full">Windows</span></div></div></div>
+                    <div class="project-card bg-card-bg dark:bg-card-bg-dark rounded-lg border border-border-color dark:border-border-color-dark overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 hover:shadow-xl dark:hover:shadow-2xl dark:hover:shadow-white/10 flex flex-col"><img src="pmanager.png" alt="Password Manager Website" class="w-full h-56 object-cover"><div class="p-6 flex flex-col flex-grow"><h3 class="text-xl font-bold mb-2 text-primary dark:text-text-primary-dark">Password Manager</h3><p class="mb-4 text-text-secondary dark:text-text-secondary-dark flex-grow">A web app to generate secure random passwords and save them locally to your device.</p><div class="flex flex-wrap gap-2 mb-4"><span class="bg-gray-200 dark:bg-border-color-dark text-xs font-semibold px-2.5 py-1 rounded-full">JavaScript</span><span class="bg-gray-200 dark:bg-border-color-dark text-xs font-semibold px-2.5 py-1 rounded-full">LocalStorage</span><span class="bg-gray-200 dark:bg-border-color-dark text-xs font-semibold px-2.5 py-1 rounded-full">HTML5</span><span class="bg-gray-200 dark:bg-border-color-dark text-xs font-semibold px-2.5 py-1 rounded-full">CSS3</span></div><div class="mt-auto flex items-center space-x-4"><a href="https://passwordmangerr.netlify.app/" target="_blank" class="text-primary dark:text-primary-dark font-semibold hover:underline">Live Demo &rarr;</a><a href="https://github.com/apoorvvvv/Password-Manager" target="_blank" class="text-primary dark:text-primary-dark font-semibold hover:underline">GitHub &rarr;</a></div></div></div>
+                    <div class="project-card bg-card-bg dark:bg-card-bg-dark rounded-lg border border-border-color dark:border-border-color-dark overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 hover:shadow-xl dark:hover:shadow-2xl dark:hover:shadow-white/10 flex flex-col"><img src="quantum.png" alt="Quantum Learning Portal" class="w-full h-56 object-cover"><div class="p-6 flex flex-col flex-grow"><h3 class="text-xl font-bold mb-2 text-primary dark:text-text-primary-dark">Quantum Learning Portal</h3><p class="mb-4 text-text-secondary dark:text-text-secondary-dark flex-grow">A beginner-friendly site introducing quantum computing basics, concepts, and curated resources.</p><div class="flex flex-wrap gap-2 mb-4"><span class="bg-gray-200 dark:bg-border-color-dark text-xs font-semibold px-2.5 py-1 rounded-full">HTML5</span><span class="bg-gray-200 dark:bg-border-color-dark text-xs font-semibold px-2.5 py-1 rounded-full">CSS3</span><span class="bg-gray-200 dark:bg-border-color-dark text-xs font-semibold px-2.5 py-1 rounded-full">JavaScript</span></div><div class="mt-auto flex items-center space-x-4"><a href="https://quantumrealm.netlify.app/" target="_blank" class="text-primary dark:text-primary-dark font-semibold hover:underline">Live Demo &rarr;</a><a href="https://github.com/apoorvvvv/quantum-website" target="_blank" class="text-primary dark:text-primary-dark font-semibold hover:underline">GitHub &rarr;</a></div></div></div>
+                    <div class="project-card bg-card-bg dark:bg-card-bg-dark rounded-lg border border-border-color dark:border-border-color-dark overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 hover:shadow-xl dark:hover:shadow-2xl dark:hover:shadow-white/10 flex flex-col"><img src="https://placehold.co/600x400/444444/ffffff?text=Veridium+(WIP)" alt="Veridium — Web Authentication Service (In Progress)" class="w-full h-56 object-cover"><div class="p-6 flex flex-col flex-grow"><h3 class="text-xl font-bold mb-2 text-primary dark:text-text-primary-dark">Veridium — Web Authentication Service (WIP)</h3><p class="mb-4 text-text-secondary dark:text-text-secondary-dark flex-grow">In progress: a web authentication service focusing on biometric flows as a provider-style sign-in option.</p><div class="flex flex-wrap gap-2 mb-4"><span class="bg-gray-200 dark:bg-border-color-dark text-xs font-semibold px-2.5 py-1 rounded-full">Python</span><span class="bg-gray-200 dark:bg-border-color-dark text-xs font-semibold px-2.5 py-1 rounded-full">APIs</span><span class="bg-gray-200 dark:bg-border-color-dark text-xs font-semibold px-2.5 py-1 rounded-full">Auth</span><span class="bg-gray-200 dark:bg-border-color-dark text-xs font-semibold px-2.5 py-1 rounded-full">Biometrics</span></div><div class="mt-auto flex items-center space-x-4"><a href="https://github.com/apoorvvvv/veridium" target="_blank" class="text-primary dark:text-primary-dark font-semibold hover:underline">GitHub &rarr;</a></div></div></div>
+                    <div class="project-card bg-card-bg dark:bg-card-bg-dark rounded-lg border border-border-color dark:border-border-color-dark overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 hover:shadow-xl dark:hover:shadow-2xl dark:hover:shadow-white/10 flex flex-col"><img src="https://placehold.co/600x400/444444/ffffff?text=Portfolio+v1" alt="Personal Portfolio Website" class="w-full h-56 object-cover"><div class="p-6 flex flex-col flex-grow"><h3 class="text-xl font-bold mb-2 text-primary dark:text-text-primary-dark">Personal Portfolio</h3><p class="mb-4 text-text-secondary dark:text-text-secondary-dark flex-grow">This very website! A clean, responsive portfolio built from scratch to showcase my skills and projects, featuring a theme toggler and generative art.</p><div class="flex flex-wrap gap-2 mb-4"><span class="bg-gray-200 dark:bg-border-color-dark text-xs font-semibold px-2.5 py-1 rounded-full">HTML5</span><span class="bg-gray-200 dark:bg-border-color-dark text-xs font-semibold px-2.5 py-1 rounded-full">TailwindCSS</span><span class="bg-gray-200 dark:bg-border-color-dark text-xs font-semibold px-2.5 py-1 rounded-full">JavaScript</span></div><div class="mt-auto flex items-center space-x-4"><a href="#" class="text-primary dark:text-primary-dark font-semibold hover:underline">GitHub &rarr;</a></div></div></div>
+                </div>
+                <div class="mt-8 text-center">
+                    <button id="projects-toggle" class="bg-gray-200 dark:bg-border-color-dark text-sm font-semibold px-4 py-2 rounded hover:bg-gray-300 dark:hover:bg-border-color-dark/80">Show more</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="terminal-section" class="py-24 bg-background dark:bg-background-dark">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary dark:text-primary-dark">Terminal</h2>
+                <div id="terminal-window" class="w-full h-96 bg-black rounded-lg shadow-2xl p-4 font-mono text-sm text-white overflow-y-auto">
+                    <div id="terminal-output"></div>
+                    <div id="terminal-input-line" class="terminal-prompt">
+                        <span class="text-deep-green">user@apoorv:~$</span>
+                        <input type="text" id="terminal-input" class="flex-grow bg-transparent border-none outline-none text-white ml-2" autocomplete="off" spellcheck="false" autocapitalize="off" autocorrect="off" data-lpignore="true">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="main-footer" class="bg-background dark:bg-background-dark text-text-secondary dark:text-text-secondary-dark text-center py-6 border-t border-border-color dark:border-border-color-dark">
+        <p>&copy; 2025 Apoorv Singh. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

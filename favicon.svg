@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 64 64" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111111"/>
+      <stop offset="1" stop-color="#1f1f1f"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="12" fill="url(#bg)"/>
+  <!-- Stylized A -->
+  <path d="M32 14 L46 50 H40 L36.8 42 H27.2 L24 50 H18 L32 14 Z M31 34 L28.5 40 H35.5 L33 34 L32.0 31.6 Z" fill="#ffffff"/>
+</svg>
+
+
