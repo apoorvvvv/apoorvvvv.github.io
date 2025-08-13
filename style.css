@@ -70,6 +70,20 @@
     will-change: transform, opacity;
 }
 
+/* Prevent horizontal scrollbars on small screens */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Ensure grid cards don’t overflow on narrow devices */
+.project-card img {
+    width: 100%;
+    height: 14rem; /* matches h-56 */
+    object-fit: cover;
+    display: block;
+}
+
 /* Custom word spacing for About section */
 .increased-word-spacing {
     word-spacing: 0.15em; /* Adjust this value as needed */
